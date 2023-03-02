@@ -1,0 +1,42 @@
+.titulo {
+  color: rgb(38, 248, 255);
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 6px #26f8ff;
+}
+
+.container-coin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-flow: column;
+}
+
+img {
+  height: 50%;
+  border-radius: 50%;
+  box-shadow: 8px 8px 15px 0px rgba(112,112,112,0.74);
+}
+
+.btn {
+  cursor: pointer;
+}
+
+ion-toolbar {
+  color: rgb(38, 248, 255);
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 6px #26f8ff;
+}
+
+h1 {
+  color: rgb(38, 248, 255);
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 1.5rem;
+  text-shadow: 0px 0px 6px #26f8ff;
+}
