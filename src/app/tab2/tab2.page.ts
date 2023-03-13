@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  value = 1;
+  valor = 1;
 
   btn1 = 1;
   btn2 = 3;
@@ -15,45 +15,45 @@ export class Tab2Page {
   btn4 = 9;
   btn5 = 12;
 
-  point = 0;
-  point2 = 0
+  ponto = 0;
+  ponto2 = 0
 
   constructor() {}
 
   btnAdd1() {
-    this.value = this.btn1;
+    this.valor = this.btn1;
   }
 
   btnAdd2() {
-    this.value = this.btn2;
+    this.valor = this.btn2;
   }
 
   btnAdd3() {
-    this.value = this.btn3;
+    this.valor = this.btn3;
   }
 
   btnAdd4() {
-    this.value = this.btn4;
+    this.valor = this.btn4;
   }
 
   btnAdd5() {
-    this.value = this.btn5;
+    this.valor = this.btn5;
   }
 
   addValue() {
-    this.point += this.value;
+    this.ponto += this.valor;
   }
 
   addValue2() {
-    this.point2 += this.value;
+    this.ponto2 += this.valor;
   }
 
   removeValue() {
-    this.point -= this.value;
+    this.ponto -= this.valor;
   }
 
   removeValue2() {
-    this.point2 -= this.value;
+    this.ponto2 -= this.valor;
   }
 
   clean() {
