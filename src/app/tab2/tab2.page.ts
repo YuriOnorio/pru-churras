@@ -9,51 +9,51 @@ export class Tab2Page {
 
   valor = 1;
 
-  btn1 = 1;
-  btn2 = 3;
-  btn3 = 6;
-  btn4 = 9;
-  btn5 = 12;
+  pontuacao1 = 1;
+  pontuacao2 = 3;
+  pontuacao3 = 6;
+  pontuacao4 = 9;
+  pontuacao5 = 12;
 
-  ponto = 0;
-  ponto2 = 0
+  pontotime1 = 0;
+  pontotime2 = 0
 
   constructor() {}
 
-  btnAdd1() {
-    this.valor = this.btn1;
+  pontuacaotime1() {
+    this.valor = this.pontuacao1;
   }
 
-  btnAdd2() {
-    this.valor = this.btn2;
+  pontuacaotime2() {
+    this.valor = this.pontuacao2;
   }
 
-  btnAdd3() {
-    this.valor = this.btn3;
+  pontuacaotime3() {
+    this.valor = this.pontuacao3;
   }
 
-  btnAdd4() {
-    this.valor = this.btn4;
+  pontuacaotime4() {
+    this.valor = this.pontuacao4;
   }
 
-  btnAdd5() {
-    this.valor = this.btn5;
+  pontuacaotime5() {
+    this.valor = this.pontuacao5;
   }
 
-  addValue() {
-    this.ponto += this.valor;
+  adicionaValor() {
+    this.pontotime1 += this.valor;
   }
 
-  addValue2() {
-    this.ponto2 += this.valor;
+  adicionaValor2() {
+    this.pontotime2 += this.valor;
   }
 
   removeValue() {
-    this.ponto -= this.valor;
+    this.pontotime1 -= this.valor;
   }
 
   removeValue2() {
-    this.ponto2 -= this.valor;
+    this.pontotime2 -= this.valor;
   }
 
   clean() {

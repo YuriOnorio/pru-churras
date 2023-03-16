@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Marcador de Truco</ion-title>
+    <ion-title class="ion-text-center">Marcador de Truco</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -10,33 +10,45 @@
       <h1>Valendo: <span>{{ valor }}</span></h1>
     </div>
     <div class="buttons">
-      <button class="btn" (click)="btnAdd1()">{{ btn1 }}</button>
-      <button class="btn" (click)="btnAdd2()">{{ btn2 }}</button>
-      <button class="btn" (click)="btnAdd3()">{{ btn3 }}</button>
-      <button class="btn" (click)="btnAdd4()">{{ btn4 }}</button>
-      <button class="btn" (click)="btnAdd5()">{{ btn5 }}</button>
+      <button class="btn" (click)="pontuacaotime1()">{{ pontuacao1 }}</button>
+      <button class="btn" (click)="pontuacaotime2()">{{ pontuacao2 }}</button>
+      <button class="btn" (click)="pontuacaotime3()">{{ pontuacao3 }}</button>
+      <button class="btn" (click)="pontuacaotime4()">{{ pontuacao4 }}</button>
+      <button class="btn" (click)="pontuacaotime5()">{{ pontuacao5 }}</button>
     </div>
+
     <div class="times">
       <div class="time">
+
         <h2>Eles</h2>
-        <button class="btn-add" (click)="addValue()">
+
+        <button class="btn-add" (click)="adicionaValor()">
           <ion-icon name="add-outline"></ion-icon>
         </button>
-        <h1>{{ ponto }}</h1>
+
+        <h1>{{ pontotime1 }}</h1>
+
         <button class="btn-remove" (click)="removeValue()">
           <ion-icon name="remove-outline"></ion-icon>
         </button>
       </div>
+
       <h1>X</h1>
+
       <div class="time">
+
         <h2>Nós</h2>
-        <button class="btn-add" (click)="addValue2()">
+
+        <button class="btn-add" (click)="adicionaValor2()">
           <ion-icon name="add-outline"></ion-icon>
         </button>
-        <h1>{{ ponto2 }}</h1>
+
+        <h1>{{ pontotime2 }}</h1>
+
         <button class="btn-remove" (click)="removeValue2()">
           <ion-icon name="remove-outline"></ion-icon>
         </button>
+
       </div>
     </div>
     <div class="rounds">
