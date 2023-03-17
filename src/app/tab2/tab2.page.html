@@ -10,67 +10,70 @@
       <h1>Valendo: <span>{{ valor }}</span></h1>
     </div>
     <div class="buttons">
-      <button class="btn" (click)="pontuacaotime1()">{{ pontuacao1 }}</button>
-      <button class="btn" (click)="pontuacaotime2()">{{ pontuacao2 }}</button>
-      <button class="btn" (click)="pontuacaotime3()">{{ pontuacao3 }}</button>
-      <button class="btn" (click)="pontuacaotime4()">{{ pontuacao4 }}</button>
-      <button class="btn" (click)="pontuacaotime5()">{{ pontuacao5 }}</button>
+      <button class="btn" (click)="pontuacaotime1()"> 1 </button>
+      <button class="btn" (click)="pontuacaotime2()"> 3 </button>
+      <button class="btn" (click)="pontuacaotime3()"> 6 </button>
+      <button class="btn" (click)="pontuacaotime4()"> 9 </button>
+      <button class="btn" (click)="pontuacaotime5()"> 12 </button>
     </div>
 
     <div class="times">
       <div class="time">
 
-        <h2>Eles</h2>
+        <h2>Time1</h2>
 
-        <button class="btn-add" (click)="adicionaValor()">
+        <button class="btn-add" (click)="valorpartida()">
           <ion-icon name="add-outline"></ion-icon>
         </button>
 
         <h1>{{ pontotime1 }}</h1>
 
-        <button class="btn-remove" (click)="removeValue()">
+        <button class="btn-remove" (click)="removervalor()">
           <ion-icon name="remove-outline"></ion-icon>
         </button>
       </div>
 
-      <h1>X</h1>
+
 
       <div class="time">
 
-        <h2>Nós</h2>
+        <h2>Time2</h2>
 
-        <button class="btn-add" (click)="adicionaValor2()">
+        <button class="btn-add" (click)="valorpartida()">
           <ion-icon name="add-outline"></ion-icon>
         </button>
 
         <h1>{{ pontotime2 }}</h1>
 
-        <button class="btn-remove" (click)="removeValue2()">
+        <button class="btn-remove" (click)="removervalor2()">
           <ion-icon name="remove-outline"></ion-icon>
         </button>
 
       </div>
     </div>
+
     <div class="rounds">
       <div class="header">
         <h2>Partidas</h2>
       </div>
       <div class="round">
         <div class="team">
-          <h3>Eles</h3>
-          <span>0</span>
+          <h3>Time1</h3>
+          <span>{{ partida1 }}</span>
         </div>
         <div class="team">
-          <h3>Nós</h3>
-          <span>0</span>
+          <h3>Time2</h3>
+          <span>{{ partida2 }}</span>
         </div>
       </div>
     </div>
+
+    <ion-button class="btn" (click)="cleanToast('bottom')" class="botaolimpar" color="corlimpar"><ion-label class="textolimpar">Limpar</ion-label></ion-button>
   </div>
 </ion-content>
 
-<ion-footer>
+<!-- <ion-footer>
   <ion-toolbar class="btn" (click)="clean()">
-    <ion-title class="ion-text-center title">Limpar</ion-title>
+    <ion-title class="ion-text-center">Limpar</ion-title>
   </ion-toolbar>
-</ion-footer>
+</ion-footer> -->
