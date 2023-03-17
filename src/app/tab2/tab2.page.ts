@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { AlertController, ToastController } from '@ionic/angular';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -17,8 +17,7 @@ export class Tab2Page {
   pontotime2 = 0
 
   constructor(
-    private toastController: ToastController,
-    private alertController: AlertController
+    private toastController: ToastController
   ) {}
 
   pontuacaotime1() {
@@ -42,21 +41,11 @@ export class Tab2Page {
   }
 
   async valorpartida() {
-    this.valor += this.valor;
-    if (this.valor >= 12) {
+    this.pontotime1 += this.valor;
+    if (this.pontotime1 >= 12) {
       this.partida1 += 1;
       this.pontotime1 = 0;
       this.pontotime2 = 0;
-
-      let time1 = 'Time 1';
-
-      const alert = await this.alertController.create({
-        header: time1,
-        message: 'Ganhou a Partida!',
-        buttons: ['Continuar'],
-      });
-
-      await alert.present();
     }
 
     this.valor = 1;
@@ -68,16 +57,6 @@ export class Tab2Page {
       this.partida2 += 1;
       this.pontotime1 = 0;
       this.pontotime2 = 0;
-
-      let time2 = 'Time 2';
-
-      const alert = await this.alertController.create({
-        header: time2,
-        message: 'Ganhou a Partida!',
-        buttons: ['Continuar'],
-      });
-
-      await alert.present();
     }
 
     this.valor = 1;
