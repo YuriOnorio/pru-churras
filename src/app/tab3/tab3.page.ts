@@ -9,7 +9,7 @@ export class Tab3Page {
 
   tamanho = 1
 
-  imagedado = 'assets/dado4.png';
+  imagedado = 'assets/dado.png';
 
   gif = 'assets/dado2.gif';
 

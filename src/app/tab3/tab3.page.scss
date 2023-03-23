@@ -23,3 +23,14 @@ font-weight: 550;
 img {
   margin-top: 20px;
 }
+
+.card {
+  padding: 20px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 25px;
+  background-color: #121212;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px 15px #00000033;
+}
